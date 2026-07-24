@@ -1265,7 +1265,33 @@ Subscribe
 </div>
 
 </section>
-
+<style>
+  .floating-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background-color: #1b4f72;
+    color: white;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+    transition: background-color 0.3s, box-shadow 0.3s;
+  }
+  .floating-btn:hover {
+    background-color: #0f3849;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+  }
+</style>
+ 
+<button type="button" class="floating-btn" id="preferencesBtn" onclick="PrivacyConsent.openPreferenceCentre(false)" title="Manage Cookie Preferences">⚙️</button>
 <!-- ================= Footer ================= -->
 
 <footer
